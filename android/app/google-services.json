@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523092540024",
+    "project_id": "visual-aid-app",
+    "storage_bucket": "visual-aid-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523092540024:android:a89c0f3439bbcf83054b8d",
+        "android_client_info": {
+          "package_name": "com.example.object_detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523092540024-f5ko0lg21bvr4flc215bmsvqo4e6hf9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi4B5GmtFakK96_Rto0XYo_mLqvkcXP-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523092540024-f5ko0lg21bvr4flc215bmsvqo4e6hf9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
