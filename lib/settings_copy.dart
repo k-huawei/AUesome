@@ -1,173 +1,118 @@
-import 'package:flutter/material.dart';
-import 'package:settings_ui/settings_ui.dart';
-import 'dart:io' show Platform;
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:flutter_tts/flutter_tts.dart';
-import 'tts_settings.dart';
-class SettingPage extends StatefulWidget {
-  SettingPage({Key key, this.title}) : super(key: key);
+import 'dart:ui';
 
-  //GOALS
-  // 1. Audio Settings (for Text to Speech): volume, pitch, male/female, language
-  //
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class SettingsPage extends StatefulWidget {
+  const SettingsPage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _SettingPageState createState() => _SettingPageState();
+  _SettingsPageState createState() => _SettingsPageState();
 }
 
-class _SettingPageState extends State<SettingPage> {
-  FlutterTts flutterTts;
-  dynamic languages;
-  String language;
-  // double volume = 0.5;
-  // double pitch = 1.0;
-  // double rate = 0.5;
-
-
-  @override
-  initState() {
-    super.initState();
-    _getLanguages();
-  }
-
-
-
-  Future _getLanguages() async {
-    languages = await flutterTts.getLanguages;
-    print("print ${languages}");
-    if (languages != null) setState(() => languages);
-  }
-
-
-  List<DropdownMenuItem<String>> getEnginesDropDownMenuItems(dynamic engines) {
-    var items = <DropdownMenuItem<String>>[];
-    for (String type in languages) {
-      items.add(DropdownMenuItem(value: type, child: Text(type)));
-    }
-    return items;
-  }
-
-
-
+class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-          //bottomNavigationBar: bottomBar(),
-            appBar: AppBar(
-              title: Text('Text To Speech',),
-              centerTitle: true,
-              backgroundColor: Colors.green,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Settings'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Expanded(
+              flex: 60,
+              child: Image(
+                  image: NetworkImage('https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg'),
+                  fit: BoxFit.cover
+              ),
             ),
-            body: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
-                child: Column(children: [
-                  languages != null ? _languageDropDownSection() : Text(""),
-                  _buildSliders()
-                ]))));
-  }
+            Expanded(
+                flex: 15,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.only(left: 30),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Deliver by 10:45am",
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(bottom: 10),
+                              child: Text(
+                                "Joe's Burger",
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold
+                                ),
+                              ),
+                            ),
+                            Text("3 items, 1.3 miles"),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                        margin: EdgeInsets.all(30),
+                        child: Text("30 mins")
+                    )
+                  ],
+                )
+            ),
+            Expanded(
+                flex: 25,
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "\$7.00",
+                            style: TextStyle(
+                                fontSize: 40,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold
+                            ),
+                          ),
+                          Text("include DoorDash pay and customer tips"),
+                        ],
+                      ),
+                    ),
 
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.all(20),
+                        width: 300,
+                        child: ElevatedButton(
+                          onPressed: (){
 
-  Widget _languageDropDownSection() =>
-      Container(
-          padding: EdgeInsets.only(top: 50.0),
-          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            DropdownButton(
-              //value: language,
-              //items: getLanguageDropDownMenuItems(language),
-              //onChanged: changedLanguageDropDownItem,
+                          },
+                          child: Text("Accept"),
+                        ),
+                      ),
+                    )
+                  ],
+                )
             )
-          ]));
-
-  Column _buildButtonColumn(Color color, Color splashColor, IconData icon,
-      String label, Function func) {
-    return Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          IconButton(
-              icon: Icon(icon),
-              color: color,
-              splashColor: splashColor,
-              onPressed: () => func()),
-          Container(
-              margin: const EdgeInsets.only(top: 8.0),
-              child: Text(label,
-                  style: TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w400,
-                      color: color)))
-        ]);
-  }
-
-  Widget _buildSliders() {
-    return Column(
-      children: [_volume(), _pitch(), _rate()],
+          ],
+        ),
+      ),
     );
   }
-
-  Widget _volume() {
-    return Slider(
-        value: TTSsettings.newVolume,
-        onChanged: (newVolume) {
-          setState(() => TTSsettings.newVolume = newVolume);
-        },
-        min: 0.0,
-        max: 1.0,
-        divisions: 10,
-        label: "Volume: $TTSsettings.newVolume");
-  }
-
-  Widget _pitch() {
-    return Slider(
-      value: TTSsettings.newPitch,
-      onChanged: (newPitch) {
-        setState(() => TTSsettings.newPitch = newPitch);
-      },
-      min: 0.5,
-      max: 2.0,
-      divisions: 15,
-      label: "Pitch: $TTSsettings.newPitch,",
-      activeColor: Colors.red,
-    );
-  }
-
-  Widget _rate() {
-    return Slider(
-      value: TTSsettings.newRate,
-      onChanged: (newRate) {
-        setState(() => TTSsettings.newRate = newRate);
-      },
-      min: 0.0,
-      max: 1.0,
-      divisions: 10,
-      label: "Rate: $TTSsettings.newRate",
-      activeColor: Colors.green,
-    );
-  }
-
-// bottomBar() =>Container(
-//   margin: EdgeInsets.all(10.0),
-//   height: 50,
-//   child: Row(
-//     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-//     children: <Widget>[
-//       FloatingActionButton(
-//         onPressed: _speak,
-//         child: Icon(Icons.play_arrow),
-//         backgroundColor: Colors.green,
-//
-//       ),
-//
-//       FloatingActionButton(
-//         onPressed: _stop,
-//         backgroundColor: Colors.red,
-//         child: Icon(Icons.stop),
-//       ),
-//     ],
-//   ),
-// );
 }

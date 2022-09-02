@@ -1,34 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'launch_screen.dart';
-import 'package:flutter_tts/flutter_tts.dart';
-import 'recognition_buttonchange.dart';
+import 'set_userprofile.dart';
+import 'start_page.dart';
 //import 'speech_input2.dart';
-import 'package:camera/camera.dart';
-import 'settings_copy.dart';
-//import 'settings_ui.dart';
-import 'editing_speech_input2.dart';
-
-List<CameraDescription> cameras;
-
-Future<Null> main() async {
+import 'signup.dart';
+//import 'settings_copy.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'login.dart';
+import 'select_diagnosed.dart';
+//import 'kit_videos.dart';
+import 'bruh.dart';
+import 'kitvids.dart';
+import 'dashboard.dart';
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-  try {
-    cameras = await availableCameras();
-  } on CameraException catch (e) {
-    print('Error: $e.code\nError Message: $e.message');
-  }
-  runApp(new MyApp());
+  //await Firebase.initializeApp();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Visual Aid',
+      title: 'AUesome',
       theme: ThemeData(
-
+        fontFamily: 'SF Pro Display Regular',
+        //scaffoldBackgroundColor: const Color(0xFFFFFF),
+        backgroundColor: Colors.white,
         dividerTheme: DividerThemeData(
           space:40,
           thickness: 10,
@@ -38,14 +38,14 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
 
     ),
-      home: MyHomePage(),
+      home: MyHomePage(title: ''),
     );
   }
 }
 
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
   // how it looks.
@@ -71,9 +71,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState(){
     _pagelist
-      ..add(Speech_SynthPage(title:"Speech Recognition"))
-      ..add(SettingPage(title: 'Home Screen'))
-      ..add(SpeechRecognitionPage());
+
+      ..add(StartPage(title:"",))
+      ..add(LoginPage(title:"",))
+      ..add(DashboardPage(title:"",))
+      ..add(KitVideoPage(title:"",))
+      ..add(SignupPage(title:""));
     super.initState();
   }
 
@@ -100,24 +103,36 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: new BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.mic),
-              label: 'Speak',
+              icon: Icon(Icons.calendar_month_rounded),
+              label: '',
               backgroundColor: Colors.lightBlueAccent,
 
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Home',
+                icon: Icon(Icons.scanner),
+                label: '',
                 backgroundColor: Colors.lightBlueAccent
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.settings),
-                label: 'Settings',
+                icon: Icon(Icons.dashboard_outlined),
+                label: '',
                 backgroundColor: Colors.lightBlueAccent
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.video_collection_rounded),
+              label: '',
+              backgroundColor: Colors.lightBlueAccent,
+
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_rounded),
+              label: '',
+              backgroundColor: Colors.lightBlueAccent,
+
             ),
           ],
           currentIndex: _currentIndex,
-          selectedItemColor: Colors.black,
+          selectedItemColor: Colors.grey.shade300,
           onTap: (int index) {
             setState(() {
               _currentIndex = index;
