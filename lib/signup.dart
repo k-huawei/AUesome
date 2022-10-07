@@ -189,7 +189,7 @@ class _SignupPageState extends State<SignupPage> {
 
                   Container(
                     width: 300,
-                    height:50,
+                    height:70,
                     margin: EdgeInsets.all(40),
                     child: ElevatedButton(
 
@@ -245,6 +245,7 @@ class _SignupPageState extends State<SignupPage> {
                             fontSize: 18,
                           ),),
                       style:  ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all(Colors.deepPurple.shade200),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25.0),

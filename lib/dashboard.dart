@@ -27,7 +27,7 @@ class _DashboardPageState extends State<DashboardPage> {
   final List<Widget> _pagelist= [];
 
   static const cardColor1 = const Color(0xffE8886D);
-    var cardColor2 = const Color(0xff99B8FF);
+  var cardColor2 = const Color(0xff99B8FF);
   static const cardColor3 = const Color(0xffA49FF1);
   // @override
   // void initState(){
@@ -70,7 +70,7 @@ class _DashboardPageState extends State<DashboardPage> {
           Row(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top:50, left: 20, right: 80),
+                  margin: EdgeInsets.only(top:30, left: 20, right: 80),
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
                         'https://www.woolha.com/media/2020/03/eevee.png'
@@ -84,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(right: 25,top:50),
+                      margin: EdgeInsets.only(right: 25,top:30),
 
                       child: Text("Katherine Hua",
                         style: TextStyle(
@@ -507,35 +507,38 @@ class _DashboardPageState extends State<DashboardPage> {
                      shape: RoundedRectangleBorder(
                        borderRadius: BorderRadius.circular(17.0),
                      ),
-                     child: Row(
-                         mainAxisAlignment: MainAxisAlignment.start,
-                         //mainAxisSize: MainAxisSize.min,
-                         children: <Widget>[
+                     child: Container(
+                       //margin: EdgeInsets.only(),
+                       child: Row(
+                           mainAxisAlignment: MainAxisAlignment.start,
+                           //mainAxisSize: MainAxisSize.min,
+                           children: <Widget>[
 
-                           Container(
-                             margin: EdgeInsets.only(left: 10),
-                             child: Icon(
-                               Icons.video_collection_rounded,
-                               size: 50,
-                               color: CupertinoColors.darkBackgroundGray,
+                             Container(
+                               margin: EdgeInsets.only(left: 10),
+                               child: Icon(
+                                 Icons.video_collection_rounded,
+                                 size: 50,
+                                 color: CupertinoColors.darkBackgroundGray,
+                               ),
                              ),
-                           ),
-                           Container(
-                             margin: EdgeInsets.only( left: 10, right: 10),
-                             child: Row(
-                               children: [
-                                 Text("Videos",
-                                     style: TextStyle(
-                                       fontSize: 22,
-                                       fontWeight: FontWeight.w700,
-                                     )
-                                 ),
+                             Container(
+                               margin: EdgeInsets.only( left: 10, right: 10),
+                               child: Row(
+                                 children: [
+                                   Text("Videos",
+                                       style: TextStyle(
+                                         fontSize: 22,
+                                         fontWeight: FontWeight.w700,
+                                       )
+                                   ),
 
 
-                               ],
+                                 ],
+                               ),
                              ),
-                           ),
-                         ]
+                           ]
+                       ),
                      ),
                    ),
                  ),

@@ -83,8 +83,14 @@ class _StartPageState extends State<StartPage> {
 
 
                           },
-                          child: Text("Sign In"),
+                          child: Text("Sign In",
+                          style:TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500
+                          )),
                             style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.blueAccent.shade100),
+
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                     RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(25.0),
@@ -108,8 +114,13 @@ class _StartPageState extends State<StartPage> {
                             );
 
                           },
-                          child: Text("Create Account"),
+                          child: Text("Create Account",
+                              style:TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400
+                              )),
                           style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(Colors.deepPurple.shade200),
                               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                   RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(25.0),

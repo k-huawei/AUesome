@@ -1,3 +1,4 @@
+import 'package:AUesome/kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'set_userprofile.dart';
@@ -9,10 +10,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'login.dart';
 import 'select_diagnosed.dart';
-//import 'kit_videos.dart';
-import 'bruh.dart';
-import 'kitvids.dart';
+import 'kit_videos.dart';
+import 'schedule.dart';
+//import 'kitvids.dart';
 import 'dashboard.dart';
+import 'schedule.dart';
+import 'kit.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //await Firebase.initializeApp();
@@ -38,7 +41,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
 
     ),
-      home: MyHomePage(title: ''),
+      home: StartPage(title: ''),
     );
   }
 }
@@ -72,8 +75,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState(){
     _pagelist
 
-      ..add(StartPage(title:"",))
-      ..add(LoginPage(title:"",))
+      ..add(SchedulePage(title:"",))
+      ..add(KitPage(title:"",))
       ..add(DashboardPage(title:"",))
       ..add(KitVideoPage(title:"",))
       ..add(SignupPage(title:""));
