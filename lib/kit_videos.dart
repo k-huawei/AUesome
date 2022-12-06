@@ -48,9 +48,9 @@ class _KitVideoPageState extends State<KitVideoPage> {
     YoutubePlayer.convertUrlToId(
         'https://www.youtube.com/watch?v=fMYbWODfXNc')!,
     YoutubePlayer.convertUrlToId(
-        'https://www.youtube.com/watch?v=drlIj0OwLJY')!,
+        'https://www.youtube.com/watch?v=TEg59h_LfAc')!,
     YoutubePlayer.convertUrlToId(
-        'https://www.youtube.com/watch?v=W-rHIsDFrzQ')!,
+        'https://www.youtube.com/watch?v=drlIj0OwLJY')!,
     // BBAyRBTfsOU,
     //  'gQDByCdjUXw',
     //  'iLnmTe5Q2Qw',

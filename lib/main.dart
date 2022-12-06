@@ -16,6 +16,10 @@ import 'schedule.dart';
 import 'dashboard.dart';
 import 'schedule.dart';
 import 'kit.dart';
+import 'package:flutter/material.dart';
+import 'package:AUesome/pages/profile_page.dart';
+import 'package:flutter/services.dart';
+import 'set_userprofile.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //await Firebase.initializeApp();
@@ -79,7 +83,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ..add(KitPage(title:"",))
       ..add(DashboardPage(title:"",))
       ..add(KitVideoPage(title:"",))
-      ..add(SignupPage(title:""));
+      ..add(InitialProfilePage(title: ""));
+      //..add(ProfilePage());
+
     super.initState();
   }
 
@@ -117,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 backgroundColor: Colors.lightBlueAccent
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.dashboard_outlined),
+                icon: Icon(Icons.home),
                 label: '',
                 backgroundColor: Colors.lightBlueAccent
             ),

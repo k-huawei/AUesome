@@ -86,7 +86,7 @@ class _StartPageState extends State<StartPage> {
                           child: Text("Sign In",
                           style:TextStyle(
                             fontSize: 20,
-                            fontWeight: FontWeight.w500
+                            fontWeight: FontWeight.w700
                           )),
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all(Colors.blueAccent.shade100),
@@ -117,7 +117,8 @@ class _StartPageState extends State<StartPage> {
                           child: Text("Create Account",
                               style:TextStyle(
                                   fontSize: 20,
-                                  fontWeight: FontWeight.w400
+                                  fontWeight: FontWeight.w700
+
                               )),
                           style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all(Colors.deepPurple.shade200),

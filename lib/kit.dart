@@ -21,6 +21,7 @@ class KitPage extends StatefulWidget {
 class _KitPageState extends State<KitPage> {
 
   var cardColor2 = const Color(0xff99B8FF);
+  static const cardColor3 = const Color(0xffbdb2ff);
 
 
   @override
@@ -69,23 +70,55 @@ class _KitPageState extends State<KitPage> {
                 height: 175,
                 child: Card(
                   elevation: 7,
-                  color: Colors.blue,
+                  color: cardColor2,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  child: Column(
+                  child: Row(
                     // mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                   // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Container(
-                        margin: EdgeInsets.only(top:15, left:15,right:15),
-                        child: Text('Complete Daily Activities',
-                          style:
-                          TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 24,
-                          )
-                          ,),
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.person_pin_rounded,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Match Me!',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
                       ),
                       // const ListTile(
                       //   //leading: Text('Complete Daily Activites'),
@@ -93,65 +126,7 @@ class _KitPageState extends State<KitPage> {
                       //   title: ,
                       //   subtitle: Text('Communication, Motor, and Sensory Skills'),
                       // ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
 
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left:20, top:10),
-                            child: Column(
-                              //mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Communication Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),
-                                Text("Sensory Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),
-                                Text("Motor Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),],
-
-
-
-                            ),
-                          ),
-                          Container(
-                            width: 100,
-                            height: 40,
-                            margin: EdgeInsets.only(left:80, right: 25,top:20),
-                            child: ElevatedButton(
-
-                              onPressed: () {
-                                // 1. Get the username(email) and password
-
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(builder: (context) => SignupPage(title: 'Home Page')),
-                                // );
-                                //);
-                              },
-                              child: Text("Begin", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-
-                                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(20.0),
-                                        //side: BorderSide(color: Colors.black)
-                                      )
-                                  )
-                              ),
-
-
-                            ),
-                          )
-                        ],
-                      ),
                     ],
                   ),
                 ),
@@ -163,23 +138,55 @@ class _KitPageState extends State<KitPage> {
                 height: 175,
                 child: Card(
                   elevation: 7,
-                  color: Colors.blue,
+                  color: cardColor3,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  child: Column(
+                  child: Row(
                     // mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Container(
-                        margin: EdgeInsets.only(top:15, left:15,right:15),
-                        child: Text('Complete Daily Activities',
-                          style:
-                          TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 24,
-                          )
-                          ,),
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.animation,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Spinner',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
                       ),
                       // const ListTile(
                       //   //leading: Text('Complete Daily Activites'),
@@ -187,65 +194,7 @@ class _KitPageState extends State<KitPage> {
                       //   title: ,
                       //   subtitle: Text('Communication, Motor, and Sensory Skills'),
                       // ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
 
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left:20, top:10),
-                            child: Column(
-                              //mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Communication Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),
-                                Text("Sensory Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),
-                                Text("Motor Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),],
-
-
-
-                            ),
-                          ),
-                          Container(
-                            width: 100,
-                            height: 40,
-                            margin: EdgeInsets.only(left:80, right: 25,top:20),
-                            child: ElevatedButton(
-
-                              onPressed: () {
-                                // 1. Get the username(email) and password
-
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(builder: (context) => SignupPage(title: 'Home Page')),
-                                // );
-                                //);
-                              },
-                              child: Text("Begin", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-
-                                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(20.0),
-                                        //side: BorderSide(color: Colors.black)
-                                      )
-                                  )
-                              ),
-
-
-                            ),
-                          )
-                        ],
-                      ),
                     ],
                   ),
                 ),
@@ -253,27 +202,59 @@ class _KitPageState extends State<KitPage> {
 
 
               Container(
-                margin: EdgeInsets.only(left:10,right: 10),
+                margin: EdgeInsets.only(left:10,right: 10, bottom:25),
                 height: 175,
                 child: Card(
                   elevation: 7,
-                  color: Colors.blue,
+                  color: cardColor2,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  child: Column(
+                  child: Row(
                     // mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Container(
-                        margin: EdgeInsets.only(top:15, left:15,right:15),
-                        child: Text('Complete Daily Activities',
-                          style:
-                          TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 24,
-                          )
-                          ,),
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.architecture_rounded ,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Clothespin',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
                       ),
                       // const ListTile(
                       //   //leading: Text('Complete Daily Activites'),
@@ -281,65 +262,7 @@ class _KitPageState extends State<KitPage> {
                       //   title: ,
                       //   subtitle: Text('Communication, Motor, and Sensory Skills'),
                       // ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
 
-                        children: <Widget>[
-                          Container(
-                            margin:EdgeInsets.only(left:20, top:10),
-                            child: Column(
-                              //mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Communication Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),
-                                Text("Sensory Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),
-                                Text("Motor Skills",
-                                  style: TextStyle(
-                                      color: Colors.black45
-                                  ),),],
-
-
-
-                            ),
-                          ),
-                          Container(
-                            width: 100,
-                            height: 40,
-                            margin: EdgeInsets.only(left:80, right: 25,top:20),
-                            child: ElevatedButton(
-
-                              onPressed: () {
-                                // 1. Get the username(email) and password
-
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(builder: (context) => SignupPage(title: 'Home Page')),
-                                // );
-                                //);
-                              },
-                              child: Text("Begin", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-
-                                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                      RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(20.0),
-                                        //side: BorderSide(color: Colors.black)
-                                      )
-                                  )
-                              ),
-
-
-                            ),
-                          )
-                        ],
-                      ),
                     ],
                   ),
                 ),
@@ -351,4 +274,5 @@ class _KitPageState extends State<KitPage> {
         )
     );
   }
+
 }
