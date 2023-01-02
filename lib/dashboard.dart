@@ -84,7 +84,7 @@ class _DashboardPageState extends State<DashboardPage> {
                         //navigateSecondPage(EditImagePage());
                       },
                       child: CircleAvatar(
-                        backgroundImage: NetworkImage(user.image),
+                        backgroundImage: NetworkImage('https://cdn141.picsart.com/357697367045201.jpg'),//user.image),
                         radius: 65,
                         //onPressed: () {},
                       )),
@@ -103,7 +103,7 @@ class _DashboardPageState extends State<DashboardPage> {
                     Container(
                       margin: EdgeInsets.only(right: 40,top:30),
 
-                      child: Text("Katherine Hua",
+                      child: Text("John Smith",
                         style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold
@@ -114,8 +114,8 @@ class _DashboardPageState extends State<DashboardPage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(right:115),//top:15),
-                          child: Text("Test User",
+                          margin: EdgeInsets.only(right:100),//top:15),
+                          child: Text("   Parent ",
                             style: TextStyle(
                               fontSize: 18,
                               //fontWeight: FontWeight.bold

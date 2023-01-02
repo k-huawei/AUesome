@@ -292,54 +292,60 @@ class Monday extends StatelessWidget {
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Memorization",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Fine Motor Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Match Me!",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Match words to images",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Clothespin",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Match clothespins onto boards",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:35, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -356,58 +362,64 @@ class Monday extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(left:30,),
+            margin: EdgeInsets.only(left:30),
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Self-Care",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Motor Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Meditate",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Calm down your mind ",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Chain Links",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Practice hand eye coordination",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:40, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -424,58 +436,64 @@ class Monday extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(left:30,),
+            margin: EdgeInsets.only(left:30),
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Motor Skills",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Attention Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Clothespin",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Play with clothespins ",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Spinner",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Spin a top and catch it on cue ",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:45, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -540,54 +558,60 @@ class Tuesday extends StatelessWidget {
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                    Text("Memorization",
-                      style: TextStyle(
-                        fontSize: 15,
-                          color: Colors.black45
-                      ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Sensory Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Match Me!",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
+                        Text("Push Bubble",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
                             color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Match words to images",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-            ],
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("For stress & anxiety relief",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:35, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -604,58 +628,64 @@ class Tuesday extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(left:30,),
+            margin: EdgeInsets.only(left:30),
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Self-Care",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Matching & Motor Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Meditate",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Calm down your mind ",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Shapes",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Match by size, shape, and color",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:40, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -672,58 +702,64 @@ class Tuesday extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(left:30,),
+            margin: EdgeInsets.only(left:30),
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Motor Skills",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Receptive Communiation",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Clothespin",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Play with clothespins ",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Emotion Flashcards",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Match pictures of people to emotions",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:45, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -782,54 +818,60 @@ class Wednesday extends StatelessWidget {
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Memorization",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Motor Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Match Me!",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Match words to images",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Zoob Blocks",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Build shapes and structures",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:35, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -846,58 +888,64 @@ class Wednesday extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(left:30,),
+            margin: EdgeInsets.only(left:30),
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Self-Care",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Behavioral Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Meditate",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Calm down your mind ",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Match Me",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Match objects to their descriptions",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:40, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -914,58 +962,64 @@ class Wednesday extends StatelessWidget {
           ),
 
           Container(
-            margin: EdgeInsets.only(left:30,),
+            margin: EdgeInsets.only(left:30),
             child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Motor Skills",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.black45
-                        ),),
+                  Expanded(
+                    flex: 65,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Sensory Skills",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.black45
+                          ),),
 
-                      Text("Clothespin",
-                        style: TextStyle(
-                          fontSize: 17.5,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black87,
-                        ),),
-                      Text("",
-                        style: TextStyle(
-                            fontSize: 5,
-                            color: Colors.black45
-                        ),),
-                      Text("Play with clothespins ",
-                        style: TextStyle(
-                            color: Colors.black45
-                        ),),
-                    ],
+                        Text("Spinner Toy",
+                          style: TextStyle(
+                            fontSize: 17.5,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.black87,
+                          ),),
+                        Text("",
+                          style: TextStyle(
+                              fontSize: 5,
+                              color: Colors.black45
+                          ),),
+                        Text("Play with a soccer ball spinner",
+                          style: TextStyle(
+                              color: Colors.black45
+                          ),),
+                      ],
+                    ),
                   ),
-                  Container(
-                    width: 80,
-                    height: 40,
-                    margin: EdgeInsets.only(left:45, right: 25,top:15),
-                    child: ElevatedButton(
+                  Expanded(
+                    flex:35,
+                    child: Container(
+                      width: 80,
+                      height: 35,
+                      margin: EdgeInsets.only( right: 25),
+                      child: ElevatedButton(
 
-                      onPressed: () {
+                        onPressed: () {
 
-                      },
-                      child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                        },
+                        child: Text("Start", style: TextStyle(fontSize:16, fontWeight: FontWeight.w500, color: Colors.black),),
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
 
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20.0),
-                                //side: BorderSide(color: Colors.black)
-                              )
-                          )
+                            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  //side: BorderSide(color: Colors.black)
+                                )
+                            )
+                        ),
+
+
                       ),
-
-
                     ),
                   )
 
@@ -1026,13 +1080,13 @@ class Thursday extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Memorization",
+                      Text("Sensory Skills",
                         style: TextStyle(
                             fontSize: 15,
                             color: Colors.black45
                         ),),
 
-                      Text("Match Me!",
+                      Text("Texture Tray",
                         style: TextStyle(
                           fontSize: 17.5,
                           fontWeight: FontWeight.w900,
@@ -1043,7 +1097,7 @@ class Thursday extends StatelessWidget {
                             fontSize: 5,
                             color: Colors.black45
                         ),),
-                      Text("Match words to images",
+                      Text("Identify and feel different textures",
                         style: TextStyle(
                             color: Colors.black45
                         ),),
@@ -1094,13 +1148,13 @@ class Thursday extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Self-Care",
+                      Text("Communication Skills",
                         style: TextStyle(
                             fontSize: 15,
                             color: Colors.black45
                         ),),
 
-                      Text("Meditate",
+                      Text("Story Flashcards",
                         style: TextStyle(
                           fontSize: 17.5,
                           fontWeight: FontWeight.w900,
@@ -1111,7 +1165,7 @@ class Thursday extends StatelessWidget {
                             fontSize: 5,
                             color: Colors.black45
                         ),),
-                      Text("Calm down your mind ",
+                      Text("Make a story from flashcards",
                         style: TextStyle(
                             color: Colors.black45
                         ),),
@@ -1162,13 +1216,13 @@ class Thursday extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Motor Skills",
+                      Text("Sensory Skills",
                         style: TextStyle(
                             fontSize: 15,
                             color: Colors.black45
                         ),),
 
-                      Text("Clothespin",
+                      Text("Sensory Brush",
                         style: TextStyle(
                           fontSize: 17.5,
                           fontWeight: FontWeight.w900,
@@ -1179,7 +1233,7 @@ class Thursday extends StatelessWidget {
                             fontSize: 5,
                             color: Colors.black45
                         ),),
-                      Text("Play with clothespins ",
+                      Text("Helps desensitize Sensory Processing Disorder",
                         style: TextStyle(
                             color: Colors.black45
                         ),),
@@ -1267,13 +1321,13 @@ class Friday extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Memorization",
+                      Text("Cognitive Skills",
                         style: TextStyle(
                             fontSize: 15,
                             color: Colors.black45
                         ),),
 
-                      Text("Match Me!",
+                      Text("Bean Bag",
                         style: TextStyle(
                           fontSize: 17.5,
                           fontWeight: FontWeight.w900,
@@ -1284,7 +1338,7 @@ class Friday extends StatelessWidget {
                             fontSize: 5,
                             color: Colors.black45
                         ),),
-                      Text("Match words to images",
+                      Text("Toss and catch with hand-eye coordination",
                         style: TextStyle(
                             color: Colors.black45
                         ),),
@@ -1335,13 +1389,13 @@ class Friday extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Self-Care",
+                      Text("Motor Skills",
                         style: TextStyle(
                             fontSize: 15,
                             color: Colors.black45
                         ),),
 
-                      Text("Meditate",
+                      Text("Threading",
                         style: TextStyle(
                           fontSize: 17.5,
                           fontWeight: FontWeight.w900,
@@ -1352,7 +1406,7 @@ class Friday extends StatelessWidget {
                             fontSize: 5,
                             color: Colors.black45
                         ),),
-                      Text("Calm down your mind ",
+                      Text("Lace strings through holes",
                         style: TextStyle(
                             color: Colors.black45
                         ),),
@@ -1403,13 +1457,13 @@ class Friday extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Motor Skills",
+                      Text("Sensory Skills",
                         style: TextStyle(
                             fontSize: 15,
                             color: Colors.black45
                         ),),
 
-                      Text("Clothespin",
+                      Text("Fidget Toy",
                         style: TextStyle(
                           fontSize: 17.5,
                           fontWeight: FontWeight.w900,
@@ -1420,7 +1474,7 @@ class Friday extends StatelessWidget {
                             fontSize: 5,
                             color: Colors.black45
                         ),),
-                      Text("Play with clothespins ",
+                      Text("Bend, stretch, and play",
                         style: TextStyle(
                             color: Colors.black45
                         ),),

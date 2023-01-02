@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'AUesome',
+      debugShowCheckedModeBanner:false,
       theme: ThemeData(
         fontFamily: 'SF Pro Display Regular',
         //scaffoldBackgroundColor: const Color(0xFFFFFF),
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+
 
     ),
       home: StartPage(title: ''),

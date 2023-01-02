@@ -40,7 +40,7 @@ class _KitPageState extends State<KitPage> {
 
           //title: Text(widget.title),
         ),
-        body: Center(
+        body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Row(
@@ -230,6 +230,273 @@ class _KitPageState extends State<KitPage> {
                           Container(
                             margin: EdgeInsets.only( left:0,right:15),
                             child: Text('Clothespin',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                      // const ListTile(
+                      //   //leading: Text('Complete Daily Activites'),
+                      //   //Icon(Icons.album),
+                      //   title: ,
+                      //   subtitle: Text('Communication, Motor, and Sensory Skills'),
+                      // ),
+
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.only(left:10,right: 10, bottom:25),
+                height: 175,
+                child: Card(
+                  elevation: 7,
+                  color: cardColor3,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Row(
+                    // mainAxisSize: MainAxisSize.min,
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.architecture_rounded ,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Chain Links',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                      // const ListTile(
+                      //   //leading: Text('Complete Daily Activites'),
+                      //   //Icon(Icons.album),
+                      //   title: ,
+                      //   subtitle: Text('Communication, Motor, and Sensory Skills'),
+                      // ),
+
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.only(left:10,right: 10, bottom:25),
+                height: 175,
+                child: Card(
+                  elevation: 7,
+                  color: cardColor2,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Row(
+                    // mainAxisSize: MainAxisSize.min,
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.architecture_rounded ,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Push Bubbles',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                      // const ListTile(
+                      //   //leading: Text('Complete Daily Activites'),
+                      //   //Icon(Icons.album),
+                      //   title: ,
+                      //   subtitle: Text('Communication, Motor, and Sensory Skills'),
+                      // ),
+
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left:10,right: 10, bottom:25),
+                height: 175,
+                child: Card(
+                  elevation: 7,
+                  color: cardColor3,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Row(
+                    // mainAxisSize: MainAxisSize.min,
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.architecture_rounded ,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Shapes',
+                              style:
+                              TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 26,
+                              )
+                              ,),
+                          ),
+                          // Container(
+                          //   margin:EdgeInsets.only(left:20, top:10),
+                          //   child: Column(
+                          //     //mainAxisAlignment: MainAxisAlignment.start,
+                          //     crossAxisAlignment: CrossAxisAlignment.start,
+                          //     children: [
+                          //       Text("Motor Skills",
+                          //         style: TextStyle(
+                          //           fontSize: 20,
+                          //             color: Colors.black45
+                          //         ),),
+                          //     ],
+                          //
+                          //
+                          //
+                          //   ),
+                          // ),
+                        ],
+                      ),
+                      // const ListTile(
+                      //   //leading: Text('Complete Daily Activites'),
+                      //   //Icon(Icons.album),
+                      //   title: ,
+                      //   subtitle: Text('Communication, Motor, and Sensory Skills'),
+                      // ),
+
+                    ],
+                  ),
+                ),
+              ),
+
+              Container(
+                margin: EdgeInsets.only(left:10,right: 10, bottom:25),
+                height: 175,
+                child: Card(
+                  elevation: 7,
+                  color: cardColor2,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Row(
+                    // mainAxisSize: MainAxisSize.min,
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    //mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left:10,right: 10),
+                        child: Icon(
+                          Icons.architecture_rounded ,
+                          size:75,
+                        ),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        //crossAxisAlignment: cr,
+                        children: [
+
+                          Container(
+                            margin: EdgeInsets.only( left:0,right:15),
+                            child: Text('Emotion Flashcards',
                               style:
                               TextStyle(
                                 fontWeight: FontWeight.w700,

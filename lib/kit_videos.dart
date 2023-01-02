@@ -36,6 +36,10 @@ class _KitVideoPageState extends State<KitVideoPage> {
     'Match Me',
     'Spinner',
     'Clothespin',
+    'Chain Links',
+    'Push Bubble',
+    'Shapes',
+    'Emotion Flashcards'
   ];
 
   // List<String> _vidURL = [
@@ -51,6 +55,15 @@ class _KitVideoPageState extends State<KitVideoPage> {
         'https://www.youtube.com/watch?v=TEg59h_LfAc')!,
     YoutubePlayer.convertUrlToId(
         'https://www.youtube.com/watch?v=drlIj0OwLJY')!,
+    // YoutubePlayer.convertUrlToId(
+    //     '')!,
+    // YoutubePlayer.convertUrlToId(
+    //     '')!,
+    // YoutubePlayer.convertUrlToId(
+    //     '')!,
+    // YoutubePlayer.convertUrlToId(
+      //  'https://www.youtube.com/watch?v=zBRMl3tR1F8')!,
+
     // BBAyRBTfsOU,
     //  'gQDByCdjUXw',
     //  'iLnmTe5Q2Qw',
@@ -266,6 +279,76 @@ class _KitVideoPageState extends State<KitVideoPage> {
                   ListTile(
                     leading: Icon(Icons.video_collection_rounded),
                     title: Text('Clothespin',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),),
+                    onTap: () {
+                      _controller.load(_ids[
+                      (items.indexOf('Clothespin')//) %
+                          //                            _ids.length
+                      )]);
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.video_collection_rounded),
+                    title: Text('Chain Links',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),),
+                    onTap: () {
+                      _controller.load(_ids[
+                      (items.indexOf('Clothespin')//) %
+                          //                            _ids.length
+                      )]);
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.video_collection_rounded),
+                    title: Text('Push Bubbles',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),),
+                    onTap: () {
+                      _controller.load(_ids[
+                      (items.indexOf('Clothespin')//) %
+                          //                            _ids.length
+                      )]);
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.video_collection_rounded),
+                    title: Text('Shapes',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),),
+                    onTap: () {
+                      _controller.load(_ids[
+                      (items.indexOf('Clothespin')//) %
+                          //                            _ids.length
+                      )]);
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.video_collection_rounded),
+                    title: Text('Emotion Flashcards',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),),
+                    onTap: () {
+                      _controller.load(_ids[
+                      (items.indexOf('Clothespin')//) %
+                          //                            _ids.length
+                      )]);
+                    },
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.video_collection_rounded),
+                    title: Text('Zoob Blocks',
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w500
